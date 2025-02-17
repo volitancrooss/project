@@ -19,7 +19,11 @@
 }
 
 body {
-    background-image: url("fondo.png");
+    background-image: url("/images/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
 }
 
 nav {
@@ -145,13 +149,22 @@ section p {
     box-shadow: 5px 5px 30px black;
 }
 
+.info-container p { 
+
+    min-width: 300px;
+}
+
+.info-container i {
+    font-size: 24px;
+}
+
 .info-container img {
     border-radius: 20px;
     filter: grayscale(60%);
     box-shadow: 5px 5px 30px black;
-    height: 50%;
+    
     width: 80%;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 
@@ -186,9 +199,8 @@ section p {
 
 .register-container img {
     width: 30%;
-    height: 40%;
     border-radius: 10%;
-    margin-top: 70px;
+    margin-top: 50px;
     box-shadow: 5px 5px 30px black;    
 }
 
@@ -199,8 +211,8 @@ section p {
     background-color: rgb(199, 233, 255);
     font-family: 'Designer';
     border-radius: 10px;
-    margin-top: 20px;
-    padding: 5px 120px 5px 120px;
+    margin-top: 40px;
+    min-width: 70%;
     box-shadow: 5px 5px 30px black;    
 }
 
@@ -227,4 +239,42 @@ footer {
 footer p {
     margin: 50px;
     font-family: Designer;
+}
+
+#secTwo {
+    background-color: rgb(126, 126, 126);
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    position: relative;
+    right: 120%;
+    bottom: 11%;
+    width: 150%;
+}
+
+.about-me h1 {
+    background-color: transparent;
+    color: rgb(129, 226, 250);
+    font-size: 30px;
+}
+
+.about-me i {
+    font-size: 120px;
+    color: aliceblue;
+    
+}
+
+.about-me p { 
+    background-color: rgb(191, 193, 216);
+    
+}
+
+.about-me img {
+    position: relative;
+    width: 10%;
 }
