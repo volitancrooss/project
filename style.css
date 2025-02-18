@@ -30,7 +30,11 @@ nav {
     display: grid;
     grid-template: "logo menu boton" 130px /
                     300px 1fr auto;
-    background-color: rgba(141, 141, 141, 0.452);
+    background-color: rgb(141, 141, 141);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
     
 
 }
@@ -147,12 +151,10 @@ section p {
 .info-container {
     background-color: rgba(141, 141, 141, 0.452);
     box-shadow: 5px 5px 30px black;
+    width: 50%;
 }
 
-.info-container p { 
 
-    min-width: 300px;
-}
 
 .info-container i {
     font-size: 24px;
@@ -163,8 +165,10 @@ section p {
     filter: grayscale(60%);
     box-shadow: 5px 5px 30px black;
     
-    width: 80%;
-    margin-top: 0px;
+    width: 60%;
+    height: 55%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -181,7 +185,8 @@ section p {
     position: relative;
     width: 99.9%;
     border-radius: 17px;
-    bottom: 37px;
+    bottom: 0px;
+    top: 0px;
     z-index: -1;
     opacity: 70%;
     object-fit: cover;
@@ -195,13 +200,17 @@ section p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 
+
+
 .register-container img {
-    width: 30%;
+    width: 25%;
     border-radius: 10%;
     margin-top: 50px;
-    box-shadow: 5px 5px 30px black;    
+    box-shadow: 5px 5px 30px black;   
+     
 }
 
 .register-container a {
@@ -212,6 +221,7 @@ section p {
     font-family: 'Designer';
     border-radius: 10px;
     margin-top: 40px;
+    margin-bottom: 20px;
     min-width: 70%;
     box-shadow: 5px 5px 30px black;    
 }
@@ -220,6 +230,115 @@ section p {
     background-color: rgb(228, 228, 228);
     color: rgb(145, 145, 145);
 }
+
+#secOne {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#secTwo {
+    background-color: rgb(126, 126, 126);
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    display: grid;
+    grid-template:
+    "about-me studios laboral-experience" 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+#secTwo h1 {
+    background-color: transparent;
+    color: rgb(129, 226, 250);
+    font-size: 30px;
+}
+
+#secTwo h3 {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 1rem;
+    color: rgb(0, 137, 250);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
+#secTwo p {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 1rem;
+    color: rgb(196, 227, 253);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
+
+
+#secTwo i {
+    font-size: 120px;
+    color: aliceblue;
+}
+
+#secThree {
+    width: 100%;
+    background-image: url("/images/225224.jpg");
+    background-position: center;
+    height: 70vh;
+    margin: 0;
+    display: grid;
+    grid-template:
+    "progress skills" 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+#secThree h1 {
+    background-color: transparent;
+    color: rgb(129, 226, 250);
+    font-size: 30px;
+    text-shadow: 1px 2px 1px white;
+}
+
+#secThree h3 { 
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 1rem;
+    color: rgb(0, 137, 250);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
+#secThree p {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 0.9rem;
+    color: rgb(196, 227, 253);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
 
 
 
@@ -230,9 +349,10 @@ footer {
     flex-direction: row;
     color: rgb(150, 150, 250);
     background-color: rgb(70, 69, 69);
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
+    
     
 }
 
@@ -241,40 +361,8 @@ footer p {
     font-family: Designer;
 }
 
-#secTwo {
-    background-color: rgb(126, 126, 126);
-    width: 100%;
-    height: 70vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
 
-.logo img {
-    position: relative;
-    right: 120%;
-    bottom: 11%;
-    width: 150%;
-}
 
-.about-me h1 {
-    background-color: transparent;
-    color: rgb(129, 226, 250);
-    font-size: 30px;
-}
 
-.about-me i {
-    font-size: 120px;
-    color: aliceblue;
-    
-}
 
-.about-me p { 
-    background-color: rgb(191, 193, 216);
-    
-}
 
-.about-me img {
-    position: relative;
-    width: 10%;
-}
