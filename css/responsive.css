@@ -1,12 +1,35 @@
 @media (max-width: 900px) {
-    #secOne {
-        grid-template: 
-            "presentation" auto
-            "title" auto
-            "register" auto;
-        width: 20%;
-    }
     
+    
+    #secOne {
+        height: auto !important;
+        min-height: 100vh;
+        background-attachment: local;
+        grid-template-areas: 
+            "presentation"
+            "info-container"
+            "register-container";
+        grid-template-columns: 1fr;
+        padding: 100px 20px 50px;
+        gap: 40px;
+        margin-top: 100px;
+    }
+
+    #secOne .presentation {
+        order: -1; /* Fuerza este contenedor a la posición superior */
+        width: 80%;
+        margin: 0 auto;
+    }
+    #secOne .info-container,
+    #secOne .register-container {
+        width: 80% !important; 
+        margin: 0 auto 30px;
+    }
+    #secOne .register-container img,
+    #secOne .info-container img {
+        width: 30% !important;
+        margin: 20px auto !important;
+    }
     #secTwo {
         grid-template: 
             "about-me" auto
@@ -21,4 +44,5 @@
         margin-top: 50px;
         margin-bottom: 100px;
     }
+    
 }

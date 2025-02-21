@@ -155,11 +155,14 @@ section p {
 
 
 #secOne {
-    height: 90vh;
+    height: 100vh;
     display: grid; /* Cambiado de flex a grid */
     grid-template-areas: "presentation title register";
     grid-template-columns: 1fr 400px 1fr;
     gap: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
     align-items: center;
     padding-top: 130px;
     background-image: url("/images/fondo.png");
