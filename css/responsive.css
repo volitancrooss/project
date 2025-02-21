@@ -1,0 +1,24 @@
+@media (max-width: 900px) {
+    #secOne {
+        grid-template: 
+            "presentation" auto
+            "title" auto
+            "register" auto;
+        width: 20%;
+    }
+    
+    #secTwo {
+        grid-template: 
+            "about-me" auto
+            "studios" auto
+            "laboral-experience" auto;
+    }
+
+    #secThree {
+        grid-template:
+    "progress" auto
+    "skills" auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
