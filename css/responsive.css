@@ -1,10 +1,24 @@
 @media (max-width: 900px) {
+    
     #secOne {
         grid-template: 
-            "presentation" auto
+            
             "title" auto
-            "register" auto;
-        width: 20%;
+            "presentation" auto
+            "register" auto 
+            ;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    #secOne div  {
+        height: 100%;
+        width: 50%;
+    }
+
+    #secOne img {
+        width: 50%;
     }
     
     #secTwo {
@@ -12,6 +26,7 @@
             "about-me" auto
             "studios" auto
             "laboral-experience" auto;
+        
     }
 
     #secThree {

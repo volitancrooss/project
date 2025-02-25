@@ -155,7 +155,7 @@ section p {
 
 
 #secOne {
-    height: 90vh;
+    height: 100vh;
     display: grid; /* Cambiado de flex a grid */
     grid-template-areas: "presentation title register";
     grid-template-columns: 1fr 400px 1fr;
@@ -180,7 +180,7 @@ section p {
 #secTwo {
     background-color: rgb(167, 158, 158);
     width: 100%;
-    
+    box-shadow: 1px 1px 50px black;
     background-image: radial-gradient(black 10%, transparent 10%);
     background-size: 10px 10px;
     margin: 0;
@@ -436,41 +436,7 @@ section p {
 
 
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    color: rgb(150, 150, 250);
-    background-color: rgb(70, 69, 69);
-    height: 20%;
-    bottom: 0;
-    width: 100%;
-    border: 2px solid black;
-    
-    
-}
 
-footer p {
-    margin: 20px;
-    font-family: Designer;
-}
-
-footer a { 
-    font-size: 13px;
-    
-    text-decoration: none;
-}
-footer a i {
-    margin-left: 30px;
-    color: rgb(150, 150, 250);
-    
-}
-
-.foo-pub a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 

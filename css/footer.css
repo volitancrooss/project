@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: rgb(184, 238, 255);
+    background-color: rgb(70, 69, 69);
+    height: 20%;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    
+    
+}
+
+footer p {
+    margin: 20px;
+    font-family: Designer;
+}
+
+footer a { 
+    font-size: 13px;
+    
+    text-decoration: none;
+}
+footer a i {
+    margin-left: 30px;
+    color: rgb(184, 238, 255);
+    
+}
+
+.foo-pub a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
