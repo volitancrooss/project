@@ -73,6 +73,7 @@
         margin: 0;
         width: 40%;
         height: 30%;
+        margin-bottom: 20px;
     }
 
     .register-container a {
@@ -100,6 +101,9 @@
 }
 
 @media (max-width: 655px) {
+    
+    
+
     nav ul {
         display: none;
     }
@@ -164,11 +168,35 @@
         padding: 0 10px;
         margin: 10px 0;
     }
+    
 
     .register-container a {
         width: 80%;
         padding: 10px;
         text-align: center;
+    }
+    #secTwo div {
+        
+        margin: 30px;
+        margin-bottom: 20px;
+    }
+    #secTwo p {
+        font-size: 11px;
+    }
+
+    #secThree .progress,
+    #secThree .skills {
+        margin: 20px;
+    }
+
+    #secThree h3 {
+        font-size: 12px;
+    }
+    #secThree h1 {
+        font-size: 17px
+    }
+    #secThree p {
+        font-size: 11px;
     }
 
     .background {
@@ -185,6 +213,40 @@
     body {
         position: relative;
         z-index: 1;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    footer div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .foo-socials p, 
+    .foo-pub p,
+    .tributo p {
+        margin: 10px 0;
+        font-size: 0.9rem;
+    }
+
+    .foo-socials a,
+    .foo-pub a {
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 0.8rem;
+    }
+
+    .foo-socials i {
+        margin-left: 0;
+    }
+
+    .tributo {
+        margin-top: 10px;
     }
 
 }
