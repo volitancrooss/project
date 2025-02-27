@@ -2,24 +2,85 @@
     
     #secOne {
         grid-template: 
-            
-            "title" auto
-            "presentation" auto
-            "register" auto 
-            ;
+            "title title" auto
+            "presentation register" auto;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
-        overflow: hidden;
+        justify-items: center;
+        border: 1px solid red;
+    }
+    
+
+    #secOne > div  {
+        margin: 0;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Cambiado de center a flex-start */
+        align-items: center;
+        padding: 0;
+    }
+
+    #secOne h1 {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    
+
+    .info-container {
+        margin: 0;
+        height: 70%;
         
+        width: 70%;
+        border: 1px solid red;
+    }
+    .info-container p {
+
+        font-size: 11px;
     }
 
-    #secOne div  {
-        height: 100%;
-        width: 50%;
+    .info-container img {
+        margin: 0;
+        width: 70%;
     }
 
-    #secOne img {
-        width: 50%;
+   
+    .presentation {
+        width: 80%;
     }
+
+    
+
+    .presentation img {
+        width: 30%;
+        border-radius: 20%;
+    }
+
+    .register-container {
+        height: 70%;
+        width: 70%
+    }
+
+    .register-container p {
+
+        font-size: 11px;
+        min-width: none;
+    }
+
+    .register-container img {
+        margin: 0;
+        width: 40%;
+        height: 30%;
+    }
+
+    .register-container a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    
     
     #secTwo {
         grid-template: 
@@ -36,4 +97,94 @@
         margin-top: 50px;
         margin-bottom: 100px;
     }
+}
+
+@media (max-width: 655px) {
+    nav ul {
+        display: none;
+    }
+    nav button {
+        margin: 20px;
+    }
+    
+    #secOne {
+        grid-template-areas: 
+            "title"
+            "presentation"
+            "register";
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 150px 0px 30px 0px;
+        margin: 0;
+    }
+
+    #secOne img {
+        width: 40%;
+    }
+
+    #secOne > div {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        padding: 15px;
+    }
+
+    .presentation {
+        grid-area: title;
+    }
+
+    .info-container {
+        grid-area: presentation;
+    }
+
+    .register-container {
+        grid-area: register;
+    }
+
+    .presentation img,
+    .info-container img,
+    .register-container img {
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #secOne h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #secOne p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        margin: 10px 0;
+    }
+
+    .register-container a {
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    /* Ensure the content scrolls properly over the background */
+    body {
+        position: relative;
+        z-index: 1;
+    }
+
 }
