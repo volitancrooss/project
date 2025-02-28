@@ -166,7 +166,7 @@ section p {
 }
 
 #secOne div {
-    margin: 20px;
+    margin: 30px;
 }
 
 
@@ -198,13 +198,12 @@ section p {
 #secTwo h3 {
     text-align: center;
     width: 100%;
-    max-width: 600px;
     padding: 10px;
     font-family: 'Designer';
     font-size: 1rem;
     color: rgb(0, 137, 250);
     text-shadow: 2px 2px 1px black;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 20px;
     background-color: rgb(191, 193, 216);
 }
@@ -215,10 +214,11 @@ section p {
     max-width: 600px;
     padding: 10px;
     font-family: 'Designer';
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: rgb(196, 227, 253);
     text-shadow: 2px 2px 1px black;
-    margin-top: 10px;
+    margin-top: 5px;
+    min-width:  230px;
     border-radius: 20px;
     background-color: rgb(191, 193, 216);
 }
@@ -228,6 +228,11 @@ section p {
 #secTwo i {
     font-size: 120px;
     color: aliceblue;
+}
+
+#secTwo .estudios {
+    margin-top: 30px;
+
 }
 
 #secThree {
