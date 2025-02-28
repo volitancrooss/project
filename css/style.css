@@ -177,6 +177,7 @@ section p {
     background-image: radial-gradient(black 10%, transparent 10%);
     background-size: 10px 10px;
     margin: 0;
+    padding: 100px 0px 100px 0px;
     display: grid;
     grid-template:
     "about-me studios laboral-experience" 500px;
@@ -237,8 +238,8 @@ section p {
 
 #secThree {
     width: 100%;
-    height: 70vh;
     margin: 0;
+    padding: 200px 0px 200px 0px;
     display: grid;
     grid-template:
     "progress skills" 500px;
@@ -246,6 +247,43 @@ section p {
     align-items: center;
     justify-content: center;
 }
+
+#secThree h1 {
+    background-color: transparent;
+    color: rgb(129, 226, 250);
+    font-size: 30px;
+    text-shadow: 1px 2px 1px white;
+}
+
+#secThree h3 { 
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 1rem;
+    color: rgb(0, 137, 250);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
+#secThree p {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: 'Designer';
+    font-size: 0.9rem;
+    color: rgb(196, 227, 253);
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 193, 216);
+}
+
+ 
 
 @keyframes move {
     100% {
@@ -395,40 +433,7 @@ section p {
 }
 
 
-#secThree h1 {
-    background-color: transparent;
-    color: rgb(129, 226, 250);
-    font-size: 30px;
-    text-shadow: 1px 2px 1px white;
-}
 
-#secThree h3 { 
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    font-family: 'Designer';
-    font-size: 1rem;
-    color: rgb(0, 137, 250);
-    text-shadow: 2px 2px 1px black;
-    margin-top: 10px;
-    border-radius: 20px;
-    background-color: rgb(191, 193, 216);
-}
-
-#secThree p {
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    font-family: 'Designer';
-    font-size: 0.9rem;
-    color: rgb(196, 227, 253);
-    text-shadow: 2px 2px 1px black;
-    margin-top: 10px;
-    border-radius: 20px;
-    background-color: rgb(191, 193, 216);
-}
 
 
 
