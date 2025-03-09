@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    flex-direction: column;
+}
+
+main .title {
+    display: flex;
+    justify-content: center;
+    color: rgb(28, 28, 28);
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: "Designer", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project {
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    margin-bottom: 10px;
+    font-family: "tommy";
+}
+
+.project p {
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #324558;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #1a252f;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}

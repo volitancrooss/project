@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="responsive-contact.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="alternate" hreflang="es" href="index.html">
     <title>Contact</title>
 </head>
 <body>
@@ -15,12 +19,12 @@
             <img src="/images/logo.png" alt="logo">
             
             <div>
-            <ul>
+            <ul id="menu">
                 
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Socials</a></li>
-                <li><a href="#">Services</a>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="index.html">Contacto</a></li>
+                <li><a href="../socials/index.html">Socials</a></li>
+                <li><a href="../services/index.html">Services <i class="bi bi-caret-down-fill"></i></a>
                     <ul class="list-services">
                         <li><a href="#">Proyecto1</a></li>
                         <li><a href="#">Proyecto2</a></li>
@@ -29,16 +33,118 @@
                 </li>
             </ul>
             </div>
-            <button><i class="bi bi-box-arrow-in-right"></i></button>
+            <div class="language-switch">
+                <a href="index.html" lang="es">ES</a>
+                <span>|</span>
+                <a href="index-en.html" lang="en">EN</a>
+            </div>
+            <a class="login-btn" href="/login/index.html"><i class="bi bi-box-arrow-in-right"></i></a>
+            <input type="checkbox" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="menu-burger">
+                <i class="bi bi-list menu-open"></i>
+                <i class="bi bi-x-lg menu-close"></i>
+            </label>
+            <div class="layer">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="index.html">Contacto</a></li>
+                    <li><a href="../socials/index.html">Socials</a></li>
+                    <li><a href="../services/index.html">Services <i class="bi bi-caret-down-fill"></i></a>
+                        <ul class="list-services">
+                            <li><a href="#">Proyecto1</a></li>
+                            <li><a href="#">Proyecto2</a></li>
+                            <li><a href="#">Proyecto3</a></li>
+                        </ul>
+                    </li>
+                    <li class="login"><a class="login" href="/login/index.html"><i class="bi bi-box-arrow-in-right"> </i>Login</a></li>
+                </ul>
+            </div>
+            <div class="wave"></div>
         </nav>
+        
     </header>
     <main>
-        <section>
+        <section id="contact-One">
             <div class="initial-container">
-                <h1>¡Welcome to the Contact Page!</h1>
-                
+                <h1>¡Bienvenido a la página de Contacto!</h1>
+                <p>· Contacta con nosotros mediante los canales oficiales de contacto que ofrecemos en esta página.</p>
+                <img src="../images/contact.png" alt="contact-img">
             </div>
         </section>
+        <section id="contact-Two">
+            <div class="socials-reference">
+                <h1>Contactame por Redes Sociales.</h1>
+                <div class="socials">
+                    <section class="social-one">
+                        <h1>Visita mi Instagram</h1>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </section>
+                    <section class="social-two">
+                        <h1>Escribeme por Whatsapp</h1>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+
+                    </section>
+                    <section class="social-three">
+                        <h1>Redacta un e-Mail</h1>
+                        <a href="#"><i class="bi bi-envelope-at-fill"></i></a>
+
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="contact-three">
+            <div class="contact-form">
+                <section class="contact-info">
+                <h2>Contactanos Ya!</h2>
+                <p class="p-es">Para contactarnos ahora mismo en este momentos porfavor, escribeme mediante este formulario donde resolveré cualquiera de tus cuestiones. </p>
+                <a href="#"> <i class="bi bi-telephone-fill"></i> 123-457-443</a>
+                <a href="#"> <i class="bi bi-envelope-arrow-up-fill"></i> email@domain.com</a>
+                <a href="#"> <i class="bi bi-globe-americas"></i> Lanzarote, España</a>
+                </section>
+                
+                <section class="form">
+                <form action="#" autocomplete="off">
+                <h3>Rellena aquí ahora</h3>
+                    <input type="text" name="nombre" placeholder="Ingresa tu Nombre" class="campo">
+                    <input type="email" name="email" placeholder="Ingresa tu Correo" class="campo">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                </form>
+                </section>
+
+        </section>
     </main>
+    <footer>
+        
+        <div class="foo-socials">
+            <p>Alexander &copy; 2025 <br>
+                <a href="#">· Visit My Social Media</a>
+                <br>
+                <a href="#"><i class="bi bi-instagram"> Sígueme</i></a>
+                <br>
+                <a href="#"><i class="bi bi-whatsapp"> contactamé</i></a>
+                <br>
+                <a href="#"><i class="bi bi-envelope-at-fill"> escribeme un e-mail</i></a>
+            </p>
+        </div>
+        <div class="foo-pub">
+            <p>Visita mis últimas Entradas <br>
+                <a href="#">· Contacto</a>
+                <a href="#">· Socials</a>
+                <a href="#">· Services</a>
+            </p>
+        </div>
+        <div class="tributo">
+            <p>Designed by me.
+                <br>
+                <a href="#">· Política de Privacidad</a>
+                <br>
+                <a href="#">· Términos y Condiciones</a>
+                <br>
+                <a href="#">· Cookies</a>
+            </p>
+
+        </div>
+    </footer>
 </body>
 </html>
