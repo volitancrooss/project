@@ -6,17 +6,25 @@
 
 main {
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
     padding: 120px 20px 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
     align-items: center;
 }
 
+
+
+.social-container {
+    display: flex;
+    gap: 30px;
+    
+}
+
 .social {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(24, 24, 24, 0.301);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 30px;
@@ -31,16 +39,48 @@ main {
     transform: translateY(-5px);
 }
 
-.social h2 {
-    color: rgb(184, 238, 255);
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-family: "Designer", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+.title-container {
+    text-align: center;
+    margin-bottom: 50px;
 }
+
+.title-container > span {
+    display: inline-block;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite;
+    font-size: clamp(50px, 5vw, 40px);
+    font-family: "Designer", sans-serif;
+    position: relative;
+    bottom: 100px;
+    letter-spacing: 2px;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #FFF;
+        text-shadow: 0 0 10px #0652DD,
+                     0 0 50px #0652DD,
+                     0 0 100px #0652DD;
+    }
+    
+    0%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+/* Corregido el selector (eliminado un punto extra) */
+.title-container > span:nth-child(2) { animation-delay: 0.25s; }
+.title-container > span:nth-child(3) { animation-delay: 0.5s; }
+.title-container > span:nth-child(4) { animation-delay: 0.75s; }
+.title-container > span:nth-child(5) { animation-delay: 1s; }
+.title-container > span:nth-child(6) { animation-delay: 1.25s; }
+.title-container > span:nth-child(7) { animation-delay: 1.5s; }
 
 .social p {
     color: #fff;
+    font-family: "Roboto";
     margin-bottom: 25px;
     line-height: 1.6;
     font-size: 16px;
@@ -81,11 +121,10 @@ main {
 }
 
 @media (max-width: 801px) {
-    main {
+    .social-container {
         padding: 100px 15px 30px;
         flex-direction: column;
-        margin-top: 0px;
-
+        bottom: 0;
     }
 
     .social {

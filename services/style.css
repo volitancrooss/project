@@ -13,7 +13,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
     flex-direction: column;
 }
 
@@ -35,13 +35,16 @@ main .title {
     100% { color: white;}
 }
 .project {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    background: rgba(24, 24, 24, 0.301);
     margin: 5px 0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
 }
-
+.project:hover {
+    padding: 2%;
+    transition: all 0.5s;
+}
 .project h2 {
     margin-bottom: 10px;
     font-family: "tommy";

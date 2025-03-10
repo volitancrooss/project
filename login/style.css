@@ -17,12 +17,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
 }
 
 .login-container {
     color:white;
-    background-color: rgb(92, 92, 155);
+    background-color: rgb(32, 70, 114);
     width: 720px;
     margin-top: 100px;
     border-radius: 20px;
