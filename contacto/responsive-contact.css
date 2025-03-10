@@ -1,4 +1,41 @@
 @media screen and (max-width: 900px) {
+    .initial-container h1 {
+        font-size: 30px;
+        margin-top: 130px;
+        white-space: normal; 
+        width: 100%; 
+        animation: fade 2s ease-in forwards; 
+        border-right: none; 
+    }
+
+    
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    .initial-container {
+        padding: 0 20px;
+    }
+
+    .initial-container p {
+        width: 100%;
+    }
+
+    .initial-container img {
+        width: 50%;
+    }
+    
     .socials {
         display: flex;
         flex-direction: column;

@@ -38,8 +38,25 @@ body {
     color: #fff;
     text-align: center;
     margin-top: 200px;
-    animation: slideDown 0.5s ease forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    display: inline-block;
+    border-right: 3px solid white;
+    animation: typing 2s linear forwards, blink 0.8s infinite;
+    
 
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 70%; }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .initial-container p {

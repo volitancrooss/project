@@ -20,9 +20,9 @@ main {
 main .title {
     display: flex;
     justify-content: center;
-    color: rgb(28, 28, 28);
-    font-size: 28px;
-    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-top: 40px;
     margin-bottom: 15px;
     font-family: "Designer", sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

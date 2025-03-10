@@ -276,8 +276,8 @@ html[lang="en"] .language-switch a[lang="en"] {
         transition: right 0.3s ease;
         z-index: 100;
         padding-top: 70px;
-        display: flex; /* Usamos flexbox para centrar el contenido */
-        flex-direction: column; /* Alineamos los elementos en columna */
+        display: flex; 
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -297,8 +297,7 @@ html[lang="en"] .language-switch a[lang="en"] {
     }
 
     .login-btn,
-    nav #menu,
-    .language-switch {
+    nav #menu {
         display: none;
     }
 
