@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Designer';
-    src: url(/fonts/Designer.otf);
+    src: url(fonts/Designer.otf);
 }
 @font-face {
     font-family: 'tommy';
-    src: url(/fonts/MADE\ TOMMY\ ExtraBold_PERSONAL\ USE.otf);
+    src: url(fonts/MADE\ TOMMY\ ExtraBold_PERSONAL\ USE.otf);
 }
 
 * {
