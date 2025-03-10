@@ -259,7 +259,7 @@
         margin-bottom: 20px;
     }
     #secTwo p {
-        font-size: 11px;
+        font-size: 16px;
     }
 
     #secThree .progress,
@@ -267,14 +267,16 @@
         margin: 20px;
     }
 
-    #secThree h3 {
-        font-size: 12px;
-    }
     #secThree h1 {
-        font-size: 17px
+        font-size: 26px
     }
+
+    #secThree h3 {
+        font-size: 18px;
+    }
+    
     #secThree p {
-        font-size: 11px;
+        font-size: 16px;
     }
 
     .background {

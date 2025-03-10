@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
 @font-face {
     font-family: 'Designer';
     src: url(../fonts/Designer.otf);
@@ -244,8 +247,8 @@ html[lang="en"] .language-switch a[lang="en"] {
     width: 100%;
     max-width: 600px;
     padding: 10px;
-    font-family: 'Designer';
-    font-size: 0.8rem;
+    font-size: 20px;
+    font-family: 'Roboto';
     color: rgb(196, 227, 253);
     text-shadow: 2px 2px 1px black;
     margin-top: 5px;
@@ -304,7 +307,7 @@ html[lang="en"] .language-switch a[lang="en"] {
     width: 100%;
     max-width: 600px;
     padding: 10px;
-    font-family: 'Designer';
+    font-family: 'Roboto';
     font-size: 0.9rem;
     color: rgb(196, 227, 253);
     text-shadow: 2px 2px 1px black;
