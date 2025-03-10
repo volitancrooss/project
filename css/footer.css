@@ -33,5 +33,5 @@ footer a i {
 .foo-pub p a {
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
 }

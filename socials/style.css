@@ -121,6 +121,13 @@ main {
 }
 
 @media (max-width: 801px) {
+    .title-container > span {
+        position: relative;
+        bottom: 0;
+    }
+    .title-container{
+        margin-bottom: 0px;
+    }
     .social-container {
         padding: 100px 15px 30px;
         flex-direction: column;
