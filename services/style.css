@@ -24,10 +24,16 @@ main .title {
     font-size: 50px;
     margin-top: 40px;
     margin-bottom: 15px;
+    animation: change-color 5s linear infinite;
     font-family: "Designer", sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+@keyframes change-color {
+    0% { color: white;}
+    50% { color: rgb(149, 149, 245);}
+    100% { color: white;}
+}
 .project {
     background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
     margin: 5px 0;

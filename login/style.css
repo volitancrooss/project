@@ -22,7 +22,7 @@ main {
 
 .login-container {
     color:white;
-    background-color: rgb(49, 49, 96);
+    background-color: rgb(92, 92, 155);
     width: 720px;
     margin-top: 100px;
     border-radius: 20px;
@@ -31,7 +31,7 @@ main {
 }
 
 .login-container:hover {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.9));
+    background: linear-gradient(135deg, rgba(139, 177, 216, 0.9), rgba(52, 73, 94, 0.9));
     transition: ease-in 0.5s;
     transform: scale(1.05);
 }
