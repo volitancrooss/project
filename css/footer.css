@@ -85,6 +85,18 @@ footer a:hover i {
     margin: 8px 0;
 }
 
+.foo-pub {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tributo {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
     footer {
@@ -110,6 +122,9 @@ footer a:hover i {
         width: 90%;
         max-width: 400px;
         margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     footer a i {
