@@ -59,7 +59,7 @@ footer a::after {
 }
 
 footer a:hover {
-    color: #2ecc71;
+    color: #8fccf5;
 }
 
 footer a:hover::after {
@@ -76,7 +76,7 @@ footer a i {
 footer a:hover i {
     transform: translateX(5px) rotate(2deg);
     transform: scale(1.1);
-    color: #95b7f5;
+    color: #4a86f5;
 }
 
 .foo-socials a {
