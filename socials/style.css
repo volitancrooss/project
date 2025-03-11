@@ -72,9 +72,7 @@ main::before {
                      0 0 100px #0652DD;
     }
     
-    0%, 90% {
-        color: #111;
-    }
+    
 }
 
 /* Corregido el selector (eliminado un punto extra) */
