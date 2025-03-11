@@ -8,6 +8,10 @@
         border-right: none; 
     }
 
+    .initial-container p {
+        font-size: 17px;
+    }
+
     
     @keyframes fade {
         from {
@@ -45,22 +49,42 @@
         height: 100%;
     }
 
+    
+
+
     #contact-three {
         height: 100%;
     }
+
+    #contact-three h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+        min-width: 300px;
+        
+    }
+    
     .contact-form {
         flex-direction: column;
         margin: 20px;
         gap: 30px;
     }
 
+    
+
     .contact-info {
         text-align: center;
     }
 
-    .contact-info p {
-        width: 100%;
+    .contact-info .p-es,
+    .contact-info .p-en {
         text-align: center;
+        margin: 15px auto 30px;
+        width: 90%;
+        min-width: 250px;
     }
 
     .contact-info a {
@@ -68,10 +92,7 @@
         margin: 15px auto;
     }
 
-    form {
-        width: 100%;
-        margin-top: 20px;
-    }
+    
 
     .contact-form h2 {
         font-size: 28px;

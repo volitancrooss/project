@@ -52,10 +52,15 @@ body {
 }
 
 @keyframes typing {
-    0% { width: 70%; }
+    0% { width: 50%;
+        color: white;}
     40% { width: 0%; }
+    50% {
+        color: blue;
+    }
     60% { width: 0%;}
-    100% { width: 70%; }
+    100% { width: 50%; 
+        color: white;}
 }
 
 @keyframes blink {
@@ -66,8 +71,8 @@ body {
 
 .initial-container p {
     font-family: 'Designer', sans-serif;
-    font-size: 17px;
-    width: 50%;
+    font-size: 24px;
+    width: 40%;
     background-color: rgba(154, 154, 255, 0.729);
     margin: 10px;
     border-radius: 5px;
@@ -77,25 +82,20 @@ body {
     margin-top: 20px;
 }
 
+
 .initial-container img {
-    width: 10%;
-    box-shadow: 10px 10px 10px black;
-    margin: 0 auto;
-    border-radius: 10%;
-    margin-bottom: 100px;
+    width: 20%;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin: 0 auto 100px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-out forwards;
     
 }
 
-@keyframes slideDown {
-    from {
-      transform: translateY(-20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+
 
 
 
@@ -182,18 +182,34 @@ body {
 }
 
 #contact-three {
-    background-image: url("../images/bg-form.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("../images/774373.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     height: 90vh;
     display: flex;
+    backdrop-filter: blur(5px);
     justify-content: center
 }
 
-#contact-three h1 {
+
+
+
+
+
+#contact-three h2 {
     font-family: 'tommy', sans-serif;
-    color: rgb(135, 135, 234);
+    color: rgb(109, 195, 230);
     font-size: 40px;
-    text-align: center
+    text-align: start;
+    
 }
+
+
 
 .contact-form {
     width: 100%;
@@ -214,10 +230,13 @@ body {
     width: 100%;
 }
 
+
+
 .contact-info .p-es {
     font-size: 17px;
     line-height: 1.6;
     text-align: start;
+    font-family: "Roboto";
     min-width: 300px;
     width: 50%;
     margin-left: 10px;
@@ -228,6 +247,7 @@ body {
     font-size: 17px;
     line-height: 1.6;
     text-align: start;
+    font-family: "Roboto";
     min-width: 300px;
     width: 50%;
     margin-left: 10px;
@@ -265,17 +285,21 @@ body {
 
 form {
     flex: 1;
-    width: 100%;
+    width: 500px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(55, 113, 189);
     margin-top: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+form:hover {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
 }
 
 form input {
@@ -283,7 +307,8 @@ form input {
     width: 100%;
     margin: 0;
     border-radius: 10px;
-    border: 2px solid rgba(135, 135, 234, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(196, 196, 214, 0.2);
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
     transition: all 0.3s ease;

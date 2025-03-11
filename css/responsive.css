@@ -68,6 +68,8 @@
         transform: rotate(1deg);
       }
 
+      
+
     #secOne {
         grid-template: 
             "title title" auto

@@ -6,13 +6,20 @@
 
 main {
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
+    background-image: url(../images/1445140.jpg);
+    
+    background-attachment: fixed;
     padding: 120px 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
     align-items: center;
+}
+
+main::before {
+    content: '';
+    
 }
 
 
@@ -53,6 +60,7 @@ main {
     font-family: "Designer", sans-serif;
     position: relative;
     bottom: 100px;
+    text-shadow: 1px 1px 10px black;
     letter-spacing: 2px;
 }
 

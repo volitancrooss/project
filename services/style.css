@@ -13,9 +13,12 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 70px;
-    background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
+    background: linear-gradient(135deg, rgba(0, 105, 211, 0.9), rgba(27, 36, 46, 0.9));
     flex-direction: column;
+
 }
+
+
 
 main .title {
     display: flex;
@@ -41,16 +44,23 @@ main .title {
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
 }
-.project:hover {
-    padding: 2%;
-    transition: all 0.5s;
+
+.bi-calendar-check-fill {
+    color: rgb(172, 248, 172);
 }
+
+.bi-calendar2-x-fill {
+    color: rgb(243, 133, 133);
+}
+
 .project h2 {
     margin-bottom: 10px;
     font-family: "tommy";
 }
 
+
 .project p {
+    font-family: "Roboto";
     margin-bottom: 20px;
 }
 
