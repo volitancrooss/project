@@ -15,19 +15,42 @@
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 40px 20px;
     background: linear-gradient(135deg, rgba(125, 185, 245, 0.9), rgba(27, 36, 46, 0.9));
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form img {
+    width: 10%;
+    
+}
+
 .login-container {
-    color:white;
+    color: white;
     background-color: rgb(32, 70, 114);
-    width: 720px;
-    margin-top: 100px;
+    width: 100%;
+    max-width: 60%;
+    min-height: 620px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
-    padding: 30px 40px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.login-container > * {
+    width: 100%;
 }
 
 .login-container:hover {
@@ -139,4 +162,56 @@ main {
     text-decoration: underline;
 }
 
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
 
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 3000px) {
+    main {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .login-container {
+        margin-top: 200px;
+        min-height: 580px;
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        max-width: 100%; 
+    }
+}
