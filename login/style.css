@@ -28,7 +28,7 @@ main {
 }
 
 form img {
-    width: 10%;
+    width: 20%;
     
 }
 
@@ -166,9 +166,10 @@ form img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     max-width: 1200px;
+    margin-top: 20px;
 }
 
 .card {
@@ -179,7 +180,7 @@ form img {
     backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -195,6 +196,11 @@ form img {
     box-shadow: 
         0 15px 35px rgba(0, 0, 0, 0.2),
         0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.card i {
+    color: rgb(111, 111, 241);
+    font-size: 34px;
 }
 
 @media (max-width: 3000px) {
@@ -213,5 +219,8 @@ form img {
 @media screen and (max-width: 600px) {
     .login-container {
         max-width: 100%; 
+    }
+    .logo-container img {
+        width: 30%;
     }
 }
