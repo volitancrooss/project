@@ -153,6 +153,7 @@ section p {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Cuando el idioma es español lo resalto de color gris y cuando es ingles lo mismo */
 html[lang="es"] .language-switch a[lang="es"],
 html[lang="en"] .language-switch a[lang="en"] {
     background-color: rgba(255, 255, 255, 0.2);
@@ -187,7 +188,7 @@ html[lang="en"] .language-switch a[lang="en"] {
 
 #secOne {
     height: 100vh;
-    display: grid; /* Cambiado de flex a grid */
+    display: grid;
     grid-template-areas: "presentation title register";
     grid-template-columns: 1fr 400px 1fr;
     gap: 20px;
