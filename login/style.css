@@ -185,6 +185,38 @@ form img {
     transition: transform 0.3s ease;
 }
 
+.card h3 {
+    font-family: "Designer";
+    font-size: 15px;
+    color: rgb(68, 160, 236);
+    position: relative;
+}
+
+.card h3::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+
+}
+
+.card h3:hover {
+    color: rgba(128, 200, 248, 0.801);
+}
+
+.card h3:hover::after {
+    width: 75%;
+}
+
+.card-info .card:nth-of-type(3) h3:hover::after {
+    width: 45%;
+}
+
+
 .card p {
     font-family: "Roboto";
     font-size: 16px;
@@ -218,7 +250,7 @@ form img {
 
 @media screen and (max-width: 600px) {
     .login-container {
-        max-width: 100%; 
+        max-width: 90%; 
     }
     .logo-container img {
         width: 30%;

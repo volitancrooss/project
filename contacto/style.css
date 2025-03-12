@@ -52,14 +52,15 @@ body {
 }
 
 @keyframes typing {
-    0% { width: 50%;
+    0% { width: 100%;
         color: white;}
     40% { width: 0%; }
     50% {
         color: blue;
     }
     60% { width: 0%;}
-    100% { width: 50%; 
+    
+    100% { width: 100%; 
         color: white;}
 }
 
@@ -106,7 +107,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0px;
-    box-sizing: border-box;
     box-shadow: 5px 5px 200px black;
 }
 
@@ -116,7 +116,7 @@ body {
     position: relative;
     top: 50px;
     color: rgb(135, 135, 234);
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     text-shadow: 2px 2px 1px black;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .socials section {
-    margin: 10px;
+    margin: 60px;
 }
 
 .socials h1 {

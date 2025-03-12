@@ -336,6 +336,12 @@
 }
 
 @media (max-width: 768px) {
+    
+    .main {
+        margin-top: 90px;
+    
+    }
+
     #secOne {
         grid-template: 
             "title" auto
@@ -343,7 +349,7 @@
             "register" auto / 1fr;
         width: 100%;
         min-height: 100vh;
-        margin-top: 70px;
+        
         padding: 20px;
         background-size: cover;
         background-position: center;
@@ -383,6 +389,12 @@
     .wave::after {
         transform: none;
     }
+
+    main .title {
+        font-size: 26px;
+    }
+
+    
 }
 
 @media (max-width: 480px) {
